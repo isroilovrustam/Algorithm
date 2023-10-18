@@ -1,0 +1,24 @@
+List Compehentsion
+
+1-misol
+sonlar = [1, 2, 3, 4, 5, 6]
+Ushbu listdagi toq sonlarni 2 ga ko'paytirib yangi listga o'tkazing.
+new = [2*son for son in sonlar if son % 2 == 1]
+print(new)
+
+2-misol
+lst = ["Ali", "Said", "Aziz", "Hasan", "Aziz", "Husan"]
+Listdagi ma'lum elementini ilk uchragan indexini topish.
+indeces = lst.index("Aziz")
+print(indeces)
+
+Listdagi ma'lum elementni barcha indexlarini topish.
+indeces = [i for i in range(len(lst) if lst[i] == "Aziz"]
+print(indeces)
+
+3-misol
+Millionerlarni toping.
+people = [("John", 240_000), ("Ali", 230_000), ("Said", 1_777_000), ("Hasan", 23_000), ("Husan", 2_222_222)]
+millioners = [i for i, j in people if j > 1_000_000]
+print(millioners)
+
