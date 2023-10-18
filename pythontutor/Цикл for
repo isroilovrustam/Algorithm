@@ -1,0 +1,85 @@
+Ряд - 1
+a = int(input())
+b = int(input())
+for i in range(a, b+1):
+    print(i)
+
+Ряд - 2
+A = int(input())
+B = int(input())
+if A < B:
+    for i in range(A, B+1):
+        print(i)
+elif A > B:
+    for i in range(A, B-1, -1):
+        print(i)
+elif A == B:
+    print(A)
+
+Ряд - 3
+a = int(input())
+b = int(input())
+for i in range(a - (a + 1) % 2, b - b % 2, -2):
+    print(i, end=' ')
+
+Сумма десяти чисел
+sum = 0
+for i in range(10):
+    number = int(input())
+    sum += number
+print(sum)
+
+Сумма N чисел
+n = int(input())
+sum = 0
+for i in range(n):
+    sum += int(input())
+print(sum)
+
+Сумма кубов
+n = int(input())
+sum = 0
+for i in range(1, n + 1):
+    sum += i ** 3
+print(sum)
+
+Факториал
+son = int(input())
+sum = 1
+for i in range(1, son+1):
+    sum *= i
+print(sum)
+
+Сумма факториалов
+n = int(input())
+pf = 1
+ps = 0
+for i in range(1, n + 1):
+    pf *= i
+    ps += pf
+print(ps)
+
+Количество нулей
+num = 0
+for i in range(int(input())):
+    if int(input()) == 0:
+        num += 1
+print(num)
+
+Лесенка
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, sep='', end='')
+    print()
+
+Потерянная карточка
+n = int(input())
+sum = 0
+for i in range(1, n + 1):
+    sum += i
+for i in range(n - 1):
+    sum -= int(input())
+print(sum)
+
+

@@ -1,0 +1,48 @@
+Сумма трёх чисел
+a = int(input())
+b = int(input())
+c = int(input())
+print(a + b + c)
+
+Площадь прямоугольного треугольника
+b = int(input())
+h = int(input())
+print(b*h/2)
+
+Дележ яблок
+n = int(input())
+k = int(input())
+print(k // n)
+print(k % n)
+
+Электронные часы
+n = int(input())
+hours = n % (60 * 24) // 60
+minutes = n % 60
+print(hours, minutes)
+
+Hello, Harry!
+n = input()
+print('Hello, '+n+'!')
+
+Следующее и предыдущее
+n = int(input())
+a = str(n)
+b = str(n+1)
+c = str(n-1)
+print('The next number for the number ' + a + ' is ' + b + '.') 
+print('The previous number for the number ' + a + ' is ' + c +'.')
+
+Парты
+a = int(input())
+b = int(input())
+c = int(input())
+print(a // 2 + b // 2 + c // 2 + a % 2 + b % 2 + c % 2)
+
+
+Шнурки
+a = int(input())
+b = int(input())
+L = int(input())
+N = int(input())
+print(2 * L + (2 * N - 1) * a + 2 * (N - 1) * b)
